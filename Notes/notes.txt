@@ -1,0 +1,12 @@
+Notes:
+
+I need to find out how to use the APIs for SIMIT first. 
+    - Write simple program calling an API.
+
+Siemens installs the Siemens.Simit.API.Coupling.dll into the GAC so it can be used by any custom .NET 
+or C++/CLI simulation coupling without needing a local copy.
+
+You need to reference this DLL from the GAC when building your integration layer.
+
+Probaly will need to purchase SIMIT software from Simmens.
+cannot download for free yet. I need to wait for account to be verified. See SS-01
