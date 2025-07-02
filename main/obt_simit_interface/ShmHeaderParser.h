@@ -129,5 +129,6 @@ private:
         std::cout << "Header size: " << header_->header_size << "\n";
         std::cout << "Version: " << header_->version << "\n";
         std::cout << "Sampling time: " << header_->sampling_time_ms << " ms\n";
+        std::cout << "Cycle counter: " << header_->cycleCounter << "\n";
     }
 };
