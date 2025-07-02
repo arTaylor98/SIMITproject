@@ -8,13 +8,13 @@
 // Structure representing a shared memory header
 #pragma pack(push, 1) // Ensure no padding is added
 struct ShmHeaderFixed {
-    uint32_t total_size;    // Size of the memory area
-    uint32_t header_size;    // Size of the header area
-    uint16_t version;           // Version of the header
-    uint32_t sampling_time_ms;   // Scanning/Sampling cycle in milliseconds
-    uint16_t cycleCounter;      // Cycle counter
-    uint8_t mutex_name_length;    // Length of the mutex name
-    std::string mutexName;      // Mutex name
+    uint32_t total_size;       // Size of the memory area
+    uint32_t header_size;      // Size of the header area
+    uint16_t version;          // Version of the header
+    uint32_t sampling_time_ms; // Scanning/Sampling cycle in milliseconds
+    uint16_t cycleCounter;     // Cycle counter
+    uint8_t mutex_name_length; // Length of the mutex name
+    // mutex_name (m bytes) and signals follow outside this struct
 };
 #pragma pack(pop) // Restore previous packing alignment
 
