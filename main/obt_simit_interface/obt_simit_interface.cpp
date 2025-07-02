@@ -10,11 +10,6 @@ int main() {
     if (!shm_data.data()) {
         std::cout << "Error: SHM data pointer is null!\n";
     }
-    std::cout << "Mock SHM buffer size: " << shm_data.size() << "\n";
-    
-    if (shm_data.data() == nullptr) {
-        std::cout << "Error: shm_data.data() is nullptr!\n";
-    }
     
     std::cout << "Mock SHM buffer address: " << static_cast<void*>(shm_data.data()) << "\n";
     std::cout << "sizeof(ShmHeaderFixed): " << sizeof(ShmHeaderFixed) << "\n";
