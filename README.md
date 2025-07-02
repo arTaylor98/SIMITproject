@@ -1,4 +1,3 @@
 # SIMITproject
-Playground for Simmen's SIMIT API calls 
-
-Research into c++ API calls to SIMIT. Trying to create interface. 
+Playground for Simmen's Shared memeory coupling (SHM)
+Research into c++ SHM to SIMIT. Trying to create interface extrenal software and SIMIT. 
