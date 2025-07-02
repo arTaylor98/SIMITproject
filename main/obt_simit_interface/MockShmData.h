@@ -13,14 +13,16 @@ inline std::vector<uint8_t> createMockShmData() {
 
     uint32_t total_size = 1024;
     uint32_t header_size = 50;
-    uint32_t version = 0;
+    uint16_t version = 0;
     uint32_t sampling_time = 100;
+    uint16_t cycle_counter = 0;
     uint8_t mutex_len = 5;
 
     append(total_size);
     append(header_size);
     append(version);
     append(sampling_time);
+    append(cycle_counter);
     append(mutex_len);
 
     const char* mutex_name = "Mutex";
@@ -58,4 +60,3 @@ inline std::vector<uint8_t> createMockShmData() {
 
     return shm;
 }
-#pragma once
