@@ -131,4 +131,3 @@ private:
         std::cout << "Sampling time: " << header_->sampling_time_ms << " ms\n";
     }
 };
-#pragma once
